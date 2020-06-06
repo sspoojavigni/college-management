@@ -1,0 +1,24 @@
+<html>
+<head align="center">SIGN UP PAGE</head>
+<body bgcolor="#993333">
+<table border="2px solid black" align="center">
+
+<form action="db.php" method="post">
+<tr><th>NAME</th><td><input type="text" placeholder="Enter ur name" title="name" size="30" name="name"/></td></tr>
+<tr><th>GENDER</th><td><input type="radio" value="m" name="gender"/>male
+<input type="radio" value="f" name="gender"/>female</td></tr>
+<tr><th>EMAIL</th><td><input type="email" name="email"/></td></tr>
+<tr><th>ADDRESS</th><td>
+<textarea name="address"> </textarea></td></tr>
+<tr><th>PROFILE</th><td><input type="file" name="profile" /></td></tr>
+<input type="submit" name="submit" value="submit">
+</form>
+</table>
+ 
+        
+         <h4 align="center"><a href="login.php">already a member</a></h4>
+
+
+
+</body>
+</html>
