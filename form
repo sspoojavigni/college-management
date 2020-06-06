@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table bgcolor="#33FFFF" align="center">
+
+<form action="dbc.php" method="post">
+<tr><th>NAME</th><td><input type="text" name="name" placeholder="Enter ur name" title="name" size="30"/></td></tr>
+<tr><th>ROLLNO</th><td><input type="text" name="rollno"/></td></tr>
+<tr><th>DOB</th><td><input type="date" name="dob"/></td></tr>
+<tr><th>DEPARTMENT</th><td><select name="department">
+<option>CSE</option>
+<option>IT</option>
+<option>ECE</option>
+</select></td></tr>
+<tr><th>EMAIL</th><td><input type="email" name="email"/></td></tr>
+<td colspan="2" align="center"><input type="submit" value="submit" /></td>
+
+</form>
+</table>
+</body>
+</html>
