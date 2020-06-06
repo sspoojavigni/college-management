@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?php
+if(isset($_POST['submit']))
+{
+        $name=$_POST['name'];
+        $gender=$_POST['gender'];
+        $dob=$_POST['dob'];
+        $department=$_POST['department'];
+        $email=$_POST['email'];
+		$password=$_POST['password'];
+		$address=$_POST['address'];
+		$d=md5($password);
+ $conn=new mysqli('localhost','root','','zomoto'); 
+ $query="insert into sign(name,gender,dob,department,email,password,address)values('$name','$gender','$dob','$department','$email','$d','$address')";
+ $queryy=$conn->query($query) or die(mysqli_error($conn));
+ $conn->close();
+ echo "thank you";
+}
+?>
+</body>
+</html>
